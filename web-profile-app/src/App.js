@@ -1,11 +1,21 @@
 // import logo from './logo.svg';
+
+// MODULES
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+
+// FILES
+import Home from './Pages/Home/Home';
+
+// CSS
 import './App.css';
 
 function App() {
   return (
     <>
-      <h1>Hello World</h1>
-      <p>Ini website profil</p>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </>
   )
 }
